@@ -39,11 +39,7 @@ The data warehouse is built on a Star Schema design to facilitate easy reporting
     * `DimOperator`: Commercial vs. private operators and airline names.
     * `DimLocation`: Geographical data including country, city, and airport codes.
 
-
-
-[Image of the Star Schema Diagram]
-
-*(Note: Upload your schema image to GitHub and replace this placeholder)*
+![Star Schema Diagram](Design_Documentation/StarSchemaDiagram.png)
 
 ### 3. ETL Process
 The ETL pipeline ensures that only clean, transformed data enters the warehouse:
@@ -52,6 +48,10 @@ The ETL pipeline ensures that only clean, transformed data enters the warehouse:
     * Handling NULL values (imputation or exclusion).
     * Mapping categorical data for the dimension tables.
 3.  **Load:** Incremental loading into the production Data Warehouse.
+
+![Control Flow](Design_Documentation/ControlFlow.png)
+![Data Flow - Populate Dim Tables](Design_Documentation/DataFlow-PopulateDimTables.png)
+![Data Flow - Populate Fact Tables](Design_Documentation/DataFlow-PopulateFactTables.png)
 
 ---
 
