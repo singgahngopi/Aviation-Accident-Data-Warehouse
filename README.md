@@ -51,7 +51,7 @@ The ETL pipeline ensures that only clean, transformed data enters the warehouse:
 
 ![Control Flow](Design_Documentation/ControlFlow.png)
 ![Data Flow - Populate Dim Tables](Design_Documentation/DataFlow-PopulateDimTables.png)
-![Data Flow - Populate Fact Tables](Design_Documentation/DataFlow-PopulateFactTables.png)
+![Data Flow - Populate Fact Tables](Design_Documentation/DataFlow-PopulateFactTable.png)
 
 ---
 
